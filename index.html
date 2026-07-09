@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket City — Where Cricket Legends Rise as Skylines</title>
+  <meta name="description" content="Cricket City visualizes cricket player statistics as a stunning 3D city. Explore Indian & international cricket legends through an immersive stadium-lit experience." />
+  <meta name="keywords" content="cricket, statistics, 3D visualization, cricket city, Sachin Tendulkar, Virat Kohli, cricket records, world map" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/design-system.css" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+  <!-- Intro Overlay -->
+  <div id="intro-overlay">
+    <canvas id="intro-canvas"></canvas>
+    <div id="intro-title">
+      <div class="intro-subtitle">Welcome to</div>
+      <h1 class="intro-heading">CRICKET<span class="accent">CITY</span></h1>
+      <div class="intro-tagline">Where Legends Rise as Skylines</div>
+      <button id="enter-city-btn" class="btn-enter">
+        <span class="btn-icon">🏏</span> Enter the Stadium
+      </button>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="hidden">
+    <!-- Navbar -->
+    <nav id="navbar"></nav>
+
+    <!-- 3D City Canvas -->
+    <div id="city-container">
+      <canvas id="city-canvas"></canvas>
+    </div>
+
+    <!-- Player Detail Panel -->
+    <div id="player-panel" class="panel-hidden"></div>
+
+    <!-- Category Overlay -->
+    <div id="category-overlay" class="overlay-hidden"></div>
+
+    <!-- History Timeline -->
+    <div id="history-view" class="view-hidden"></div>
+
+    <!-- Footer HUD -->
+    <div id="hud-bar">
+      <div class="hud-left">
+        <span class="hud-label">CRICKET CITY</span>
+        <span class="hud-divider">|</span>
+        <span id="hud-category">ALL PLAYERS</span>
+      </div>
+      <div class="hud-right">
+        <span id="hud-count">0</span> Buildings
+        <span class="hud-divider">|</span>
+        <span id="hud-format">ALL FORMATS</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
